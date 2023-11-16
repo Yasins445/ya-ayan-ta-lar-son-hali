@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containers{
+    width: 80%;
+    margin: auto;
+}
+.navbar{
+    display: flex;
+    background-color:  rgb(39, 36, 53);
+    width: 100%;
+    height: 20%;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+
+}
+.logo{
+    width: 130px;
+    height: 100px;
+   
+}
+.logo img{
+width: 100%;
+height: 100px;
+
+
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+   
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: crimson;
+    font-size: 20px;
+}
+.navbar ul li{
+    padding: 5px;
+}
+.navbar ul li a:hover{
+    color: aliceblue;
+    background-color: crimson;
+}
+/* linkler arasındaki çizgiler */
+.navbar ul li:nth-child(2){
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+body{
+    background-color: lightcyan;
+    height: 100%;
+
+}
+.anasayfamain{
+   
+    height: 60%;
+    grid-template-rows: 1fr 1fr  ;
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr ;
+    grid-gap: 25px;
+    width: 80%;
+    margin: auto;
+}
+img{
+    width: 100%;
+    height: 92%;
+}
+.kart{
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    width: 100%;
+    height: 90%;
+    box-shadow: 10px 30px  rgb(39, 36, 53);
+    
+   
+}
+
+footer{
+    width: 100%;
+}
+.ayak{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(39, 36, 53);
+    margin-top: 10px;
+    text-align: center;
+}
+.kart p{
+    background-color: crimson;
+     font-weight: bold;
+     border-radius: 10px;
+     box-shadow: 5px 10px   rgb(39, 36, 53)
+     ;
+
+   
+}
+.ayak a{
+    text-decoration: none;
+    margin-top: 20px;
+    color: azure;
+}
+.ayak p{
+    color: aliceblue;
+}
+
+/*iletişim bölümü için*/
+.iletisim p{
+    font-weight: bolder;
+}
+.iletisim{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: 2px solid darkblue;
+    background-color: rgb(71, 217, 217);
+    
+}
+.iletisimmain{
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    margin-bottom: 400px;
+}
+/* hakkımızda bölümü için */
+.hakkımızdamain{
+    text-align: center;
+}
+.hakbaslik{
+    background-color: rgb(71, 217, 217) ;
+}
+.hakbaslik a{
+    text-decoration: none;
+}
+.hakbaslik img{
+    width: 300px;
+    height: 400px;
+}
+/* gizlilik bölümü */
+.gizlipol{
+    width: 50%;
+    height: 100%;
+    border: 2px solid black;
+    margin:auto
+}
+.politikakapsayici{
+   text-align: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  /* RESPONSİVE */
+
+  @media screen and (max-width:1060px){
+    .anasayfamain{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+    @media screen and (max-width:700px) {
+        .anasayfamain{
+            grid-template-columns: 1fr;
+        }
+    }
+    @media screen and (max-width:400px) {
+        .logo{
+            visibility: hidden;
+        }
+        
+    }
+    @media screen and(max-width:300px) {
+    .profil{
+            width: 270px;
+        }
+        .gizlipol{
+            width: 100%;
+        }
+    }
+  
